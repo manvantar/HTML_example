@@ -1,0 +1,76 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #main {
+        display: flex;
+        flex: 1;
+    }
+
+    #main>article {
+        flex: 1;
+        order: 1;
+    }
+
+    #main>nav,
+    #main>aside {
+        flex: 0 0 20vw;
+    }
+
+    #main>nav {
+        background: #D7E8D4;
+        order: 3;
+    }
+
+    #main>aside {
+        background: beige;
+        order: 2;
+    }
+
+    header,
+    footer {
+        align-content: center;
+        background: yellowgreen;
+        height: 20vh;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+        padding: 1em;
+    }
+</style>
+
+<body>
+    <header>FlexExample1</header>
+    <div id="main">
+        <article>Article1
+            <p>There are a number of reasons you may need a block of text and when you do, a random paragraph can be the
+                perfect solution. If you happen to be a web designer and you need some random text to show in your
+                layout, a random paragraph can be an excellent way to do this. If you're a programmer and you need
+                random text to test the program, using these paragraphs can be the perfect way to do this. Anyone who's
+                in search of realistic text for a project can use one or more of these random paragraphs to fill their
+                need. </p>
+        </article>
+        <nav>Article3 <p>For some writers, it isn't getting the original words on paper that's the challenge, but
+                rewriting the first and second drafts.</p>
+        </nav>
+        <aside>Article2 <p>For those who are looking for a difficult writing challenge, the random paragraph generator
+                can provide that as well. Instead of writing about the entire paragraph
+            <p>
+        </aside>
+    </div>
+    <footer>Thank </footer>
+</body>
